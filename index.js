@@ -74,8 +74,7 @@
       'social.fb': 'Facebook',
       'social.wa': 'WhatsApp',
       'footer.slogan': 'Be the One. Be U1.',
-      'footer.copy':
-        '\u00a9 2026 U1Gym \u2014 Fayyum, Egypt. All rights reserved.',
+      'footer.copy': 'Developed by codegate',
     },
     ar: {
       title:
@@ -175,8 +174,7 @@
       'social.wa': '\u0648\u0627\u062a\u0633\u0627\u0628',
       'footer.slogan':
         '\u0643\u0646 \u0627\u0644\u0623\u0641\u0636\u0644. \u0643\u0646 U1.',
-      'footer.copy':
-        '\u00a9 2026 U1Gym \u2014 \u0627\u0644\u0641\u064a\u0648\u0645\u060c \u0645\u0635\u0631. \u062c\u0645\u064a\u0639 \u0627\u0644\u062d\u0642\u0648\u0642 \u0645\u062d\u0641\u0648\u0638\u0629.',
+      'footer.copy': 'Developed by codegate',
     },
   };
 
