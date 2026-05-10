@@ -181,7 +181,7 @@
   var PERKS = {
     '1m': {
       en: [
-        { text: 'Full gym access', dim: false },
+        { text: 'Unlimited gym entrance & sessions', dim: false },
         { text: 'InBody scan', dim: true },
         { text: 'PT session', dim: true },
         { text: 'Sauna / Steam', dim: true },
@@ -189,7 +189,7 @@
       ],
       ar: [
         {
-          text: '\u062f\u062e\u0648\u0644 \u0643\u0627\u0645\u0644 \u0644\u0644\u062c\u064a\u0645',
+          text: '\u062f\u062e\u0648\u0644 \u063a\u064a\u0631 \u0645\u062d\u062f\u0648\u062f \u0644\u0644\u062c\u064a\u0645 \u0648\u062d\u0635\u0635 \u063a\u064a\u0631 \u0645\u062d\u062f\u0648\u062f\u0629',
           dim: false,
         },
         { text: '\u0641\u062d\u0635 InBody', dim: true },
@@ -206,7 +206,7 @@
     },
     '2m': {
       en: [
-        { text: 'Full gym access', dim: false },
+        { text: 'Unlimited gym entrance & sessions', dim: false },
         { text: '1 InBody scan', dim: false },
         { text: '1 Invitation', dim: false },
         { text: 'PT session', dim: true },
@@ -214,7 +214,7 @@
       ],
       ar: [
         {
-          text: '\u062f\u062e\u0648\u0644 \u0643\u0627\u0645\u0644 \u0644\u0644\u062c\u064a\u0645',
+          text: '\u062f\u062e\u0648\u0644 \u063a\u064a\u0631 \u0645\u062d\u062f\u0648\u062f \u0644\u0644\u062c\u064a\u0645 \u0648\u062d\u0635\u0635 \u063a\u064a\u0631 \u0645\u062d\u062f\u0648\u062f\u0629',
           dim: false,
         },
         {
@@ -237,7 +237,7 @@
     },
     '3m': {
       en: [
-        { text: 'Full gym access', dim: false },
+        { text: 'Unlimited gym entrance & sessions', dim: false },
         { text: '1 InBody scan', dim: false },
         { text: '1 PT session', dim: false },
         { text: '1 Steam', dim: false },
@@ -246,7 +246,7 @@
       ],
       ar: [
         {
-          text: '\u062f\u062e\u0648\u0644 \u0643\u0627\u0645\u0644 \u0644\u0644\u062c\u064a\u0645',
+          text: '\u062f\u062e\u0648\u0644 \u063a\u064a\u0631 \u0645\u062d\u062f\u0648\u062f \u0644\u0644\u062c\u064a\u0645 \u0648\u062d\u0635\u0635 \u063a\u064a\u0631 \u0645\u062d\u062f\u0648\u062f\u0629',
           dim: false,
         },
         {
@@ -270,7 +270,7 @@
     },
     '6m': {
       en: [
-        { text: 'Full gym access', dim: false },
+        { text: 'Unlimited gym entrance & sessions', dim: false },
         { text: '2 InBody scans', dim: false },
         { text: '1 PT session', dim: false },
         { text: '2 Steam', dim: false },
@@ -281,7 +281,7 @@
       ],
       ar: [
         {
-          text: '\u062f\u062e\u0648\u0644 \u0643\u0627\u0645\u0644 \u0644\u0644\u062c\u064a\u0645',
+          text: '\u062f\u062e\u0648\u0644 \u063a\u064a\u0631 \u0645\u062d\u062f\u0648\u062f \u0644\u0644\u062c\u064a\u0645 \u0648\u062d\u0635\u0635 \u063a\u064a\u0631 \u0645\u062d\u062f\u0648\u062f\u0629',
           dim: false,
         },
         { text: '\u0641\u062d\u0635\u0627 InBody', dim: false },
@@ -310,7 +310,7 @@
     },
     an: {
       en: [
-        { text: 'Full gym access', dim: false },
+        { text: 'Unlimited gym entrance & sessions', dim: false },
         { text: '5 InBody scans', dim: false },
         { text: '3 PT sessions', dim: false },
         { text: '5 Steam', dim: false },
@@ -321,7 +321,7 @@
       ],
       ar: [
         {
-          text: '\u062f\u062e\u0648\u0644 \u0643\u0627\u0645\u0644 \u0644\u0644\u062c\u064a\u0645',
+          text: '\u062f\u062e\u0648\u0644 \u063a\u064a\u0631 \u0645\u062d\u062f\u0648\u062f \u0644\u0644\u062c\u064a\u0645 \u0648\u062d\u0635\u0635 \u063a\u064a\u0631 \u0645\u062d\u062f\u0648\u062f\u0629',
           dim: false,
         },
         { text: '5 \u0641\u062d\u0648\u0635\u0627\u062a InBody', dim: false },
@@ -350,7 +350,7 @@
     },
     vip: {
       en: [
-        { text: 'Full gym access', dim: false },
+        { text: 'Unlimited gym entrance & sessions', dim: false },
         { text: '8 InBody scans', dim: false },
         { text: '4 PT sessions', dim: false },
         { text: '8 Steam', dim: false },
@@ -358,11 +358,10 @@
         { text: '4 Jacuzzi', dim: false },
         { text: '8 Invitations', dim: false },
         { text: '2-Month freeze', dim: false },
-        { text: '1-Month nutrition plan', dim: false },
       ],
       ar: [
         {
-          text: '\u062f\u062e\u0648\u0644 \u0643\u0627\u0645\u0644 \u0644\u0644\u062c\u064a\u0645',
+          text: '\u062f\u062e\u0648\u0644 \u063a\u064a\u0631 \u0645\u062d\u062f\u0648\u062f \u0644\u0644\u062c\u064a\u0645 \u0648\u062d\u0635\u0635 \u063a\u064a\u0631 \u0645\u062d\u062f\u0648\u062f\u0629',
           dim: false,
         },
         { text: '8 \u0641\u062d\u0648\u0635\u0627\u062a InBody', dim: false },
@@ -385,10 +384,6 @@
         { text: '8 \u062f\u0639\u0648\u0627\u062a', dim: false },
         {
           text: '\u062a\u062c\u0645\u064a\u062f \u0634\u0647\u0631\u0627\u0646',
-          dim: false,
-        },
-        {
-          text: '\u062e\u0637\u0629 \u062a\u063a\u0630\u064a\u0629 \u0644\u0645\u062f\u0629 \u0634\u0647\u0631',
           dim: false,
         },
       ],
@@ -523,6 +518,15 @@
     // Currency label
     document.querySelectorAll('.currency').forEach(function (el) {
       el.textContent = isAR ? 'جم' : 'LE';
+    });
+
+    // Old amount currency in plan cards
+    document.querySelectorAll('.old-amount').forEach(function (el) {
+      if (!el.dataset.oldAmountEn)
+        el.dataset.oldAmountEn = el.textContent.trim();
+      el.textContent = isAR
+        ? el.dataset.oldAmountEn.replace(/\bLE\b/g, 'جم')
+        : el.dataset.oldAmountEn;
     });
 
     // Hours — translate AM/PM
