@@ -357,7 +357,7 @@
         { text: '8 Sauna', dim: false },
         { text: '4 Jacuzzi', dim: false },
         { text: '8 Invitations', dim: false },
-        { text: '2-Month freeze', dim: false },
+        { text: '1-Month freeze', dim: false },
       ],
       ar: [
         {
@@ -383,7 +383,7 @@
         },
         { text: '8 \u062f\u0639\u0648\u0627\u062a', dim: false },
         {
-          text: '\u062a\u062c\u0645\u064a\u062f \u0634\u0647\u0631\u0627\u0646',
+          text: '\u062a\u062c\u0645\u064a\u062f \u0634\u0647\u0631 \u0648\u0627\u062d\u062f',
           dim: false,
         },
       ],

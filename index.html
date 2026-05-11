@@ -936,17 +936,18 @@
       }
       .map-embed {
         width: 100%;
-        height: 340px;
-        border-radius: 4px;
+        height: 400px;
+        border-radius: 16px;
         border: 1px solid var(--card-border);
         overflow: hidden;
         background: #111;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
       }
       .map-embed iframe {
         width: 100%;
         height: 100%;
         border: none;
-        filter: invert(1) hue-rotate(180deg);
+        filter: invert(1) hue-rotate(180deg) saturate(0.85) brightness(0.95);
       }
 
       /* ─── SOCIAL ─── */
@@ -1017,6 +1018,20 @@
       }
       .social-icon {
         font-size: 20px;
+      }
+      .reel-embed-wrap {
+        width: 100%;
+        max-width: 320px;
+        aspect-ratio: 9 / 16;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      }
+      .reel-embed-wrap iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 16px;
       }
 
       /* ─── FOOTER ─── */
@@ -1281,6 +1296,10 @@
             <div class="plan-duration" data-i18n="plan.1m.dur">
               30 days access
             </div>
+            <div class="plan-old-price">
+              <span class="old-amount">1,500 LE</span>
+              <span class="plan-discount-badge">10% OFF</span>
+            </div>
             <div class="plan-price">
               <span class="amount">1,350</span>
               <span class="currency">LE</span>
@@ -1305,8 +1324,12 @@
             <div class="plan-duration" data-i18n="plan.2m.dur">
               60 days access
             </div>
+            <div class="plan-old-price">
+              <span class="old-amount">2,500 LE</span>
+              <span class="plan-discount-badge">20% OFF</span>
+            </div>
             <div class="plan-price">
-              <span class="amount">2,250</span>
+              <span class="amount">2,000</span>
               <span class="currency">LE</span>
             </div>
             <div class="plan-divider"></div>
@@ -1331,10 +1354,10 @@
             </div>
             <div class="plan-old-price">
               <span class="old-amount">4,000 LE</span>
-              <span class="plan-discount-badge">44% OFF</span>
+              <span class="plan-discount-badge">25% OFF</span>
             </div>
             <div class="plan-price">
-              <span class="amount">2,250</span>
+              <span class="amount">3,000</span>
               <span class="currency">LE</span>
             </div>
             <div class="plan-divider"></div>
@@ -1359,7 +1382,7 @@
             </div>
             <div class="plan-old-price">
               <span class="old-amount">7,000 LE</span>
-              <span class="plan-discount-badge">29% OFF</span>
+              <span class="plan-discount-badge">28% OFF</span>
             </div>
             <div class="plan-price">
               <span class="amount">5,000</span>
@@ -1762,7 +1785,11 @@
               <div class="location-item-icon">📍</div>
               <div class="location-item-text">
                 <h4 data-i18n="loc.addr.label">Address</h4>
-                <p class="location-address" dir="rtl" data-i18n-html="loc.addr.html">
+                <p
+                  class="location-address"
+                  dir="rtl"
+                  data-i18n-html="loc.addr.html"
+                >
                   الفيوم — دله — أمام مستشفى الحياة 2<br /><a
                     href="https://maps.app.goo.gl/UnkZtGBVn61oXhRw6"
                     target="_blank"
@@ -1797,9 +1824,7 @@
               <div class="location-item-text">
                 <h4 data-i18n="loc.ig">Instagram</h4>
                 <p>
-                  <a
-                    href="https://www.instagram.com/u1gymeg"
-                    target="_blank"
+                  <a href="https://www.instagram.com/u1gymeg" target="_blank"
                     >@u1gymeg</a
                   >
                 </p>
@@ -1822,9 +1847,7 @@
               <div class="location-item-text">
                 <h4 data-i18n="loc.fb">Facebook</h4>
                 <p>
-                  <a
-                    href="https://www.facebook.com/U1Gym"
-                    target="_blank"
+                  <a href="https://www.facebook.com/U1Gym" target="_blank"
                     >U1 Gym</a
                   >
                 </p>
@@ -1841,7 +1864,7 @@
           </div>
           <div class="map-embed">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3!2d30.8418!3d29.3084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDE4JzMwLjIiTiAzMMKwNTAnMzAuNSJF!5e0!3m2!1sen!2seg!4v1234567890"
+              src="https://maps.google.com/maps?q=29.3243408203125,30.8575496673584&z=17&hl=en&output=embed"
               allowfullscreen=""
               loading="lazy"
             >
@@ -1863,6 +1886,15 @@
         >
           Stay up to date with classes, transformations, and offers.
         </p>
+        <div class="reel-embed-wrap">
+          <iframe
+            src="https://www.instagram.com/reel/DS8BIN2jB72/?igsh=MW9oamhtNmRmcTg5bg==/embed/"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+            scrolling="no"
+          ></iframe>
+        </div>
         <div class="social-links">
           <a
             href="https://www.instagram.com/u1gymeg?igsh=c3Y0ZHhzMzhpZnRt"
