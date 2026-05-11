@@ -62,7 +62,7 @@
       'loc.title': 'Our <span>Location</span>',
       'loc.addr.label': 'Address',
       'loc.addr.html':
-        'Fayyum \u2014 Dallah \u2014 In front of Al Hayah 2 Hospital<br><a href="https://maps.app.goo.gl/UnkZtGBVn61oXhRw6" target="_blank">Open in Google Maps \u2192</a>',
+        '\u0627\u0644\u0641\u064a\u0648\u0645 \u2014 \u062f\u0644\u0647 \u2014 \u0623\u0645\u0627\u0645 \u0645\u0633\u062a\u0634\u0641\u0649 \u0627\u0644\u062d\u064a\u0627\u0629 2<br><a href="https://maps.app.goo.gl/UnkZtGBVn61oXhRw6" target="_blank">\u0627\u0641\u062a\u062d \u0641\u064a \u062e\u0631\u0627\u0626\u0637 \u062c\u0648\u062c\u0644 \u2192</a>',
       'loc.phone.label': 'Phone / WhatsApp',
       'loc.ig': 'Instagram',
       'loc.fb': 'Facebook',

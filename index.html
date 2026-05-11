@@ -914,10 +914,22 @@
         color: rgba(255, 255, 255, 0.8);
         line-height: 1.5;
       }
+      .location-item-text p.location-address {
+        font-family: 'Cairo', sans-serif;
+        direction: rtl;
+        text-align: left;
+      }
+      .location-item-text p.location-address a,
       .location-item-text a {
-        color: #fff;
-        text-decoration: none;
+        display: inline-flex;
+        direction: ltr;
+        unicode-bidi: isolate;
+        text-decoration: none !important;
+        color: #fff !important;
         transition: color 0.2s;
+      }
+      .location-item-text a:hover {
+        color: var(--lime);
       }
       .location-item-text a:hover {
         color: var(--lime);
@@ -1269,12 +1281,8 @@
             <div class="plan-duration" data-i18n="plan.1m.dur">
               30 days access
             </div>
-            <div class="plan-old-price">
-              <span class="old-amount">1,800 LE</span>
-              <span class="plan-discount-badge">17% OFF</span>
-            </div>
             <div class="plan-price">
-              <span class="amount">1,500</span>
+              <span class="amount">1,350</span>
               <span class="currency">LE</span>
             </div>
             <div class="plan-divider"></div>
@@ -1297,12 +1305,8 @@
             <div class="plan-duration" data-i18n="plan.2m.dur">
               60 days access
             </div>
-            <div class="plan-old-price">
-              <span class="old-amount">2,800 LE</span>
-              <span class="plan-discount-badge">11% OFF</span>
-            </div>
             <div class="plan-price">
-              <span class="amount">2,500</span>
+              <span class="amount">2,250</span>
               <span class="currency">LE</span>
             </div>
             <div class="plan-divider"></div>
@@ -1327,10 +1331,10 @@
             </div>
             <div class="plan-old-price">
               <span class="old-amount">4,300 LE</span>
-              <span class="plan-discount-badge">7% OFF</span>
+              <span class="plan-discount-badge">47% OFF</span>
             </div>
             <div class="plan-price">
-              <span class="amount">4,000</span>
+              <span class="amount">2,250</span>
               <span class="currency">LE</span>
             </div>
             <div class="plan-divider"></div>
@@ -1355,10 +1359,10 @@
             </div>
             <div class="plan-old-price">
               <span class="old-amount">7,300 LE</span>
-              <span class="plan-discount-badge">4% OFF</span>
+              <span class="plan-discount-badge">31% OFF</span>
             </div>
             <div class="plan-price">
-              <span class="amount">7,000</span>
+              <span class="amount">5,000</span>
               <span class="currency">LE</span>
             </div>
             <div class="plan-divider"></div>
@@ -1383,10 +1387,10 @@
             </div>
             <div class="plan-old-price">
               <span class="old-amount">10,200 LE</span>
-              <span class="plan-discount-badge">3% OFF</span>
+              <span class="plan-discount-badge">41% OFF</span>
             </div>
             <div class="plan-price">
-              <span class="amount">9,900</span>
+              <span class="amount">6,000</span>
               <span class="currency">LE</span>
             </div>
             <div class="plan-divider"></div>
@@ -1412,10 +1416,10 @@
             </div>
             <div class="plan-old-price">
               <span class="old-amount">12,800 LE</span>
-              <span class="plan-discount-badge">2% OFF</span>
+              <span class="plan-discount-badge">49% OFF</span>
             </div>
             <div class="plan-price">
-              <span class="amount">12,500</span>
+              <span class="amount">6,500</span>
               <span class="currency">LE</span>
             </div>
             <div class="plan-divider"></div>
@@ -1758,11 +1762,11 @@
               <div class="location-item-icon">📍</div>
               <div class="location-item-text">
                 <h4 data-i18n="loc.addr.label">Address</h4>
-                <p data-i18n-html="loc.addr.html">
-                  Fayyum — Dallah — In front of Al Hayah 2 Hospital<br /><a
+                <p class="location-address" dir="rtl" data-i18n-html="loc.addr.html">
+                  الفيوم — دله — أمام مستشفى الحياة 2<br /><a
                     href="https://maps.app.goo.gl/UnkZtGBVn61oXhRw6"
                     target="_blank"
-                    >Open in Google Maps →</a
+                    >افتح في خرائط جوجل</a
                   >
                 </p>
               </div>
@@ -1794,7 +1798,7 @@
                 <h4 data-i18n="loc.ig">Instagram</h4>
                 <p>
                   <a
-                    href="https://www.instagram.com/u1gymeg?igsh=c3Y0ZHhzMzhpZnRt"
+                    href="https://www.instagram.com/u1gymeg"
                     target="_blank"
                     >@u1gymeg</a
                   >
@@ -1819,7 +1823,7 @@
                 <h4 data-i18n="loc.fb">Facebook</h4>
                 <p>
                   <a
-                    href="https://www.facebook.com/share/1B3txXVpvy/?mibextid=wwXIfr"
+                    href="https://www.facebook.com/U1Gym"
                     target="_blank"
                     >U1 Gym</a
                   >
