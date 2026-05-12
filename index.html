@@ -315,6 +315,80 @@
         color: var(--lime);
       }
 
+      /* ─── ABOUT ─── */
+      #about {
+        background: var(--dark);
+      }
+      .about-content {
+        width: 100%;
+      }
+      [dir='rtl'] .about-content {
+        font-family: 'Cairo', sans-serif;
+        direction: rtl;
+        text-align: right;
+      }
+      .about-intro {
+        font-size: clamp(18px, 2.2vw, 22px);
+        font-weight: 700;
+        color: var(--lime);
+        line-height: 1.7;
+        margin-bottom: 28px;
+      }
+      .about-para {
+        font-size: clamp(15px, 1.8vw, 17px);
+        color: rgba(255, 255, 255, 0.82);
+        line-height: 1.9;
+        margin-bottom: 20px;
+      }
+      .about-services {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 10px;
+        margin: 0 0 28px;
+        padding: 0;
+      }
+      .about-services li {
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        border-radius: 4px;
+        padding: 12px 16px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        transition:
+          background 0.2s,
+          border-color 0.2s;
+      }
+      .about-services li:hover {
+        background: rgba(204, 255, 0, 0.08);
+        border-color: rgba(204, 255, 0, 0.35);
+      }
+      .about-tagline {
+        margin-top: 32px;
+        padding: 28px 32px;
+        border-left: 3px solid var(--lime);
+        background: rgba(204, 255, 0, 0.04);
+        border-radius: 4px 0 0 4px;
+      }
+      [dir='rtl'] .about-tagline {
+        border-left: none;
+        border-right: 3px solid var(--lime);
+        border-radius: 0 4px 4px 0;
+      }
+      .about-tagline p {
+        font-size: clamp(16px, 2vw, 20px);
+        font-weight: 800;
+        color: #fff;
+        line-height: 1.7;
+      }
+      .about-tagline p:first-child {
+        color: var(--lime);
+        font-size: clamp(18px, 2.4vw, 24px);
+        margin-bottom: 8px;
+      }
+
       /* ─── MEMBERSHIPS ─── */
       #memberships {
         background: var(--dark);
@@ -407,7 +481,7 @@
         font-weight: 600;
         color: var(--text-muted);
         text-decoration: line-through;
-        text-decoration-color: rgba(255, 255, 255, 0.4);
+        text-decoration-color: rgba(220, 50, 50, 0.75);
       }
       .plan-discount-badge {
         background: var(--lime);
@@ -930,7 +1004,7 @@
         color: rgba(255, 255, 255, 0.8);
         line-height: 1.5;
       }
-      .location-item-text p.location-address {
+      [dir='rtl'] .location-item-text p.location-address {
         font-family: 'Cairo', sans-serif;
         direction: rtl;
         text-align: left;
@@ -1287,6 +1361,7 @@
         <span class="nav-logo-text">U1Gym</span>
       </a>
       <ul class="nav-links">
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
         <li>
           <a href="#memberships" data-i18n="nav.memberships">Memberships</a>
         </li>
@@ -1347,6 +1422,59 @@
         >
       </div>
     </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-label">
+          <span data-i18n="about.label">About</span>
+        </div>
+        <h2 class="section-title" data-i18n-html="about.title">
+          About <span>U1</span>
+        </h2>
+        <div class="about-content">
+          <p class="about-intro" data-i18n="about.intro">
+            At U1 Gym, we offer a complete fitness experience with entirely
+            different standards.
+          </p>
+          <p class="about-para" data-i18n="about.para1">
+            A premium gym designed with the latest modern methods and the
+            highest level of equipment, featuring the strongest and most
+            advanced fitness machines in Fayyum Governorate — so you can
+            experience a professional training environment that blends quality,
+            comfort, and luxury.
+          </p>
+          <p class="about-para" data-i18n="about.para2">
+            The space spans over 1,800 sqm, giving you freedom and comfort in
+            every detail of your day, with comprehensive services including:
+          </p>
+          <ul class="about-services" data-i18n-html="about.services">
+            <li>Spa</li>
+            <li>Sauna</li>
+            <li>Steam</li>
+            <li>Jacuzzi</li>
+            <li>Massage Sessions</li>
+            <li>Physical Therapy</li>
+            <li>Nutrition Doctor</li>
+            <li>Cafe</li>
+            <li>Kids Area</li>
+          </ul>
+          <p class="about-para" data-i18n="about.para3">
+            The gym is also open 24 hours a day to fit any schedule, with the
+            latest locker systems to ensure the highest levels of security and
+            privacy for members.
+          </p>
+          <div class="about-tagline">
+            <p data-i18n="about.tagline1">U1 is more than just a gym…</p>
+            <p data-i18n="about.tagline2">
+              U1 is a place built for you to care for your health, build your
+              body, and enjoy a complete experience of comfort and luxury — all
+              in one place.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- MEMBERSHIPS -->
     <section id="memberships">
@@ -1855,11 +1983,7 @@
               <div class="location-item-icon">📍</div>
               <div class="location-item-text">
                 <h4 data-i18n="loc.addr.label">Address</h4>
-                <p
-                  class="location-address"
-                  dir="rtl"
-                  data-i18n-html="loc.addr.html"
-                >
+                <p class="location-address" data-i18n-html="loc.addr.html">
                   الفيوم — دله — أمام مستشفى الحياة 2<br /><a
                     href="https://maps.app.goo.gl/UnkZtGBVn61oXhRw6"
                     target="_blank"

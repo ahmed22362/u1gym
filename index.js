@@ -3,6 +3,7 @@
     en: {
       title: 'U1Gym — Be the One',
       'nav.memberships': 'Memberships',
+      'nav.about': 'About',
       'nav.hours': 'Hours',
       'nav.location': 'Location',
       'nav.cta': 'Join Now',
@@ -12,6 +13,21 @@
       'hero.primary': 'View Memberships',
       'hero.outline': 'WhatsApp Us',
       'hero.scroll': 'Scroll',
+      'about.label': 'About',
+      'about.title': 'About <span>U1</span>',
+      'about.intro':
+        'At U1 Gym, we offer a complete fitness experience with entirely different standards.',
+      'about.para1':
+        'A premium gym designed with the latest modern methods and the highest level of equipment, featuring the strongest and most advanced fitness machines in Fayyum Governorate — so you can experience a professional training environment that blends quality, comfort, and luxury.',
+      'about.para2':
+        'The space spans over 1,800 sqm, giving you freedom and comfort in every detail of your day, with comprehensive services including:',
+      'about.services':
+        '<li>Spa</li><li>Sauna</li><li>Steam</li><li>Jacuzzi</li><li>Massage Sessions</li><li>Physical Therapy</li><li>Nutrition Doctor</li><li>Cafe</li><li>Kids Area</li>',
+      'about.para3':
+        'The gym is also open 24 hours a day to fit any schedule, with the latest locker systems to ensure the highest levels of security and privacy for members.',
+      'about.tagline1': 'U1 is more than just a gym…',
+      'about.tagline2':
+        'U1 is a place built for you to care for your health, build your body, and enjoy a complete experience of comfort and luxury — all in one place.',
       'sec.memberships': 'Memberships',
       'sec.memberships.title': 'Choose Your <span>Plan</span>',
       'plan.best': 'Best Value',
@@ -61,8 +77,7 @@
       'loc.label': 'Find Us',
       'loc.title': 'Our <span>Location</span>',
       'loc.addr.label': 'Address',
-      'loc.addr.html':
-        '\u0627\u0644\u0641\u064a\u0648\u0645 \u2014 \u062f\u0644\u0647 \u2014 \u0623\u0645\u0627\u0645 \u0645\u0633\u062a\u0634\u0641\u0649 \u0627\u0644\u062d\u064a\u0627\u0629 2<br><a href="https://maps.app.goo.gl/UnkZtGBVn61oXhRw6" target="_blank">\u0627\u0641\u062a\u062d \u0641\u064a \u062e\u0631\u0627\u0626\u0637 \u062c\u0648\u062c\u0644 \u2192</a>',
+      'loc.addr.html': 'Fayyum — Dala — In front of Al-Hayah Hospital 2<br><a href="https://maps.app.goo.gl/UnkZtGBVn61oXhRw6" target="_blank">Open in Google Maps →</a>',
       'loc.phone.label': 'Phone / WhatsApp',
       'loc.ig': 'Instagram',
       'loc.fb': 'Facebook',
@@ -81,6 +96,7 @@
         'U1 \u062c\u064a\u0645 \u2014 \u0643\u0646 \u0627\u0644\u0623\u0641\u0636\u0644',
       'nav.memberships':
         '\u0627\u0644\u0627\u0634\u062a\u0631\u0627\u0643\u0627\u062a',
+      'nav.about': '\u0639\u0646 \u0627\u0644\u062c\u064a\u0645',
       'nav.hours': '\u0627\u0644\u0645\u0648\u0627\u0639\u064a\u062f',
       'nav.location': '\u0627\u0644\u0645\u0648\u0642\u0639',
       'nav.cta': '\u0627\u0646\u0636\u0645 \u0627\u0644\u0622\u0646',
@@ -94,6 +110,15 @@
       'hero.outline':
         '\u062a\u0648\u0627\u0635\u0644 \u0648\u0627\u062a\u0633\u0627\u0628',
       'hero.scroll': '\u0645\u0631\u0631',
+      'about.label': '\u0639\u0646 \u0627\u0644\u062c\u064a\u0645',
+      'about.title': '\u0639\u0646 <span>U1</span>',
+      'about.intro': 'في U1 Gym إحنا بنقدم تجربة رياضية متكاملة بمعايير مختلفة تمامًا.',
+      'about.para1': 'جيم Premium مُصمم بأحدث الأساليب العصرية وعلى أعلى مستوى من التجهيزات، ويضم أقوى وأحدث الأجهزة الرياضية الموجودة في محافظة الفيوم، علشان تعيش تجربة تدريب احترافية تجمع بين الجودة والراحة والفخامة.',
+      'about.para2': 'المكان مصمم على مساحة اكتر من 1800 متر تديك حرية وراحة في كل تفاصيل يومك، ومجهز بخدمات متكاملة تشمل:',
+      'about.services': '<li>Spa</li><li>Sauna</li><li>Steam</li><li>Jacuzzi</li><li>جلسات Massage</li><li>علاج طبيعي</li><li>دكتور تغذية</li><li>Cafe</li><li>Kids Area</li>',
+      'about.para3': 'وكمان الجيم مفتوح 24 ساعة يوميًا ليناسب كل الأوقات، مع أحدث أنظمة الـ Lockers لضمان أعلى درجات الأمان والخصوصية للأعضاء.',
+      'about.tagline1': 'U1 مش مجرد جيم…',
+      'about.tagline2': 'U1 مكان معمول علشان تهتم بصحتك، تبني جسمك، وتاخد تجربة متكاملة من الراحة والرفاهية في مكان واحد.',
       'sec.memberships':
         '\u0627\u0644\u0627\u0634\u062a\u0631\u0627\u0643\u0627\u062a',
       'sec.memberships.title':
@@ -462,8 +487,11 @@
       var perks = PERKS[planId] && PERKS[planId][l];
       if (!perks) return;
       ul.innerHTML = perks
+        .filter(function (p) {
+          return !p.dim;
+        })
         .map(function (p) {
-          return '<li' + (p.dim ? ' class="dim"' : '') + '>' + p.text + '</li>';
+          return '<li>' + p.text + '</li>';
         })
         .join('');
     });
